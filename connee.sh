@@ -39,15 +39,3 @@ sudo systemctl disable exim4
 
 sudo dpkg --configure -a && apt-get install --fix-missing
 sudo apt-get update && sudo apt-get -o Dpkg::Options::="--force-confold" --yes --quiet upgrade -y  && sudo apt-get remove mosquitto -y && sudo apt-get install nano preload -y && sudo apt-get autoremove -y && sudo apt-get autoclean -y
-
-#wget del file del backup
-#wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1V3SlHab-miyu16l5iWq4iz2bNBrb7pf7' -O file.sh
-#docker cp FILE_BACKUP $(docker ps -q -f "name=homeassistant"):/data/backup
-#ha backup reload
-#ha backup restore 8e4e5163
-
-
-#CAPIRE COME SCARICARE IL FILE DI GOOGLE
-https://drive.google.com/file/d/1V3SlHab-miyu16l5iWq4iz2bNBrb7pf7/view?usp=drive_link
-
-wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=11IYg0XgUBnOV1xwigEg8or4LNNOl8Rbk' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=11IYg0XgUBnOV1xwigEg8or4LNNOl8Rbk" -O FILENAME && rm -rf /tmp/cookies.txt
