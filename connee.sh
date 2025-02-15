@@ -38,4 +38,4 @@ sudo systemctl disable udisks2 #da testare
 sudo systemctl disable exim4
 
 sudo dpkg --configure -a && apt-get install --fix-missing
-sudo apt-get update && sudo apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" --force-yes upgrade -y  && sudo apt-get remove mosquitto -y && sudo apt-get install nano preload -y && sudo apt-get autoremove -y && sudo apt-get autoclean -y
+sudo apt-get update && sudo apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" upgrade -y  && sudo apt-get remove mosquitto -y && sudo apt-get install nano preload -y && sudo apt-get autoremove -y && sudo apt-get autoclean -y
