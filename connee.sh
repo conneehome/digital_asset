@@ -33,7 +33,7 @@ echo "net.ipv6.conf.lo.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p
 
 #disable non-used-service
-sudo systemctl disable cups
+#sudo systemctl disable cups
 sudo systemctl disable udisks2 #da testare
 sudo systemctl disable exim4
 
